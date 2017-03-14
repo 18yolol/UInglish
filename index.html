@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+
+</head>
+
+<body ng-app="english">
+    <div id="wrapper">
+
+        <!-- PreLoader -->
+        <div id="page-preloader"><span class="spinner"></span></div>
+        <!-- PreLoader end -->
+
+        <header>
+            <nav>
+                <div class="nav-wrapper amber ">
+                    <a ui-sref="welcome" class="brand-logo matte-black">Tên app</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a ui-sref="welcome" class="matte-black">Trang chủ</a></li>
+                        <li><a ui-sref="about" class="matte-black">Về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <section id="main-content">
+            <div class="content-container container">
+                <div class="row content-row">
+                    <div class="content-col col s12">
+                        <div class="well hoverable">
+
+                            <ui-view class=""></ui-view>
+                        </div>
+                    </div>
+                    <!-- end col-md-8 -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- End main content -->
+
+        <footer>
+            <div class="amber hide-on-small-only">
+                <p id="footer-content" class="matte-black">&copy; 2017 18yolol and Techy Novice</p>
+                <!-- <p>Ngàn yêu thương từ 18yolol <i class="fa fa-heart" aria-hidden="true"></i></p> -->
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Font awesome -->
+    <script src="https://use.fontawesome.com/3db6e9baa2.js"></script>
+
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
+    <script src="english.module.js"></script>
+
+    <script src="controllers/state.controller.js"></script>
+    <!-- States -->
+    <script src="states/welcome/welcome.state.js"></script>
+    <script src="states/about/about.state.js"></script>
+    <script src="states/first-question/first.state.js"></script>
+    <script src="states/second-question/second.state.js"></script>
+    <script src="states/third-question/third.state.js"></script>
+    <script src="states/forth-question/forth.state.js"></script>
+    <script src="states/fifth-question/fifth.state.js"></script>
+    <script src="states/sixth-question/sixth.state.js"></script>
+    <script src="states/seventh-question/seventh.state.js"></script>
+    <script src="states/eighth-question/eighth.state.js"></script>
+    <script src="states/wait/wait.state.js"></script>
+    <script src="states/result/result.state.js"></script>
+</body>
+
+</html>
