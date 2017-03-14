@@ -9,7 +9,6 @@
 
     function stateConfig($stateProvider) {
       $stateProvider.state('about', {
-        parent: 'app',
         url: '/about',
         template: 'About State'
       });

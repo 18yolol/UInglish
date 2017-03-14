@@ -21,7 +21,7 @@
 
 /* Image card */
 .blur {
-  filter: blur(1px);
+  filter: blur(0px);
 }
 
 
