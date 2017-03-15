@@ -10,7 +10,7 @@
     function stateConfig($stateProvider) {
       $stateProvider.state('about', {
         url: '/about',
-        template: 'About State'
+        templateUrl: 'states/about/about.html'
       });
     };
 })();
