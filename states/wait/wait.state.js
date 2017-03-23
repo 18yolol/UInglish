@@ -14,12 +14,13 @@
         controller: 'StateController',
         controllerAs: 'vm',
         onEnter: function($timeout, $state){
+          var resultNumber = 1 + Math.floor(Math.random() * 2);
           $timeout(function(){
             $(document).ready(function(){
               $('#spinner').fadeOut('slow');
               $('#welcome-header').fadeOut('slow');
             });
-            $state.go('result');
+            $state.go('result'+resultNumber.toString());
           }, 5000);
         }
       });

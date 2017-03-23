@@ -8,9 +8,9 @@
     stateConfig.$inject = ['$stateProvider'];
 
     function stateConfig($stateProvider) {
-      $stateProvider.state('result', {
-        url: '/result',
-        templateUrl : 'states/result/result.html',
+      $stateProvider.state('result1', {
+        url: '/result1',
+        templateUrl : 'states/result1/result1.html',
       });
     };
 })();
